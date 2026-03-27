@@ -1,0 +1,24 @@
+[0.968s] Invoking command in '/home/ayeong/ros2_ws/src/lidar_mock': PYTHONPATH=/home/ayeong/ros2_ws/build/lidar_mock/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayeong/ros2_ws/install/lidar_mock/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_mock build --build-base /home/ayeong/ros2_ws/build/lidar_mock/build install --record /home/ayeong/ros2_ws/build/lidar_mock/install.log --single-version-externally-managed install_data
+[1.294s] running egg_info
+[1.322s] writing ../../build/lidar_mock/lidar_mock.egg-info/PKG-INFO
+[1.322s] writing dependency_links to ../../build/lidar_mock/lidar_mock.egg-info/dependency_links.txt
+[1.323s] writing entry points to ../../build/lidar_mock/lidar_mock.egg-info/entry_points.txt
+[1.323s] writing requirements to ../../build/lidar_mock/lidar_mock.egg-info/requires.txt
+[1.323s] writing top-level names to ../../build/lidar_mock/lidar_mock.egg-info/top_level.txt
+[1.380s] reading manifest file '../../build/lidar_mock/lidar_mock.egg-info/SOURCES.txt'
+[1.381s] writing manifest file '../../build/lidar_mock/lidar_mock.egg-info/SOURCES.txt'
+[1.381s] running build
+[1.381s] running build_py
+[1.381s] copying lidar_mock/lidar_publisher.py -> /home/ayeong/ros2_ws/build/lidar_mock/build/lib/lidar_mock
+[1.382s] running install
+[1.387s] running install_lib
+[1.415s] copying /home/ayeong/ros2_ws/build/lidar_mock/build/lib/lidar_mock/lidar_publisher.py -> /home/ayeong/ros2_ws/install/lidar_mock/lib/python3.12/site-packages/lidar_mock
+[1.415s] byte-compiling /home/ayeong/ros2_ws/install/lidar_mock/lib/python3.12/site-packages/lidar_mock/lidar_publisher.py to lidar_publisher.cpython-312.pyc
+[1.416s] running install_data
+[1.416s] running install_egg_info
+[1.445s] removing '/home/ayeong/ros2_ws/install/lidar_mock/lib/python3.12/site-packages/lidar_mock-0.0.0-py3.12.egg-info' (and everything under it)
+[1.445s] Copying ../../build/lidar_mock/lidar_mock.egg-info to /home/ayeong/ros2_ws/install/lidar_mock/lib/python3.12/site-packages/lidar_mock-0.0.0-py3.12.egg-info
+[1.447s] running install_scripts
+[1.657s] Installing lidar_publisher script to /home/ayeong/ros2_ws/install/lidar_mock/lib/lidar_mock
+[1.657s] writing list of installed files to '/home/ayeong/ros2_ws/build/lidar_mock/install.log'
+[1.687s] Invoked command in '/home/ayeong/ros2_ws/src/lidar_mock' returned '0': PYTHONPATH=/home/ayeong/ros2_ws/build/lidar_mock/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayeong/ros2_ws/install/lidar_mock/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_mock build --build-base /home/ayeong/ros2_ws/build/lidar_mock/build install --record /home/ayeong/ros2_ws/build/lidar_mock/install.log --single-version-externally-managed install_data
