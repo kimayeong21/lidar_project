@@ -46,9 +46,13 @@ if front_dist < safe_dist:
     action = "turn_left" if left_dist > right_dist else "turn_right"
 else:
     action = "go_forward"
+
+
+---
+
 🗄️ 데이터 구조
 컬럼	설명
-id	고유 ID
+id	    고유 ID
 ranges	360도 거리 데이터 (JSON)
 when	저장 시간
 action	주행 결과
@@ -56,29 +60,46 @@ action	주행 결과
 👉 변환 후 데이터:
 
 range_0 ~ range_359 + action = 총 361개 컬럼
+
+---
+
 ▶️ 실행 방법
+
 1️⃣ LiDAR Publisher (WSL)
+
 ros2 run lidar_publisher lidar_publisher_node
+
 2️⃣ rosbridge 실행
+
 ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
 3️⃣ turtlesim 실행
+
 ros2 run turtlesim turtlesim_node
+
 4️⃣ Python 실행 (Windows)
+
 python turtle_driver.py
+
+
+---
+
 📊 진행 현황
-단계	내용	상태
+단계	     내용	                상태
 1	LiDAR 데이터 생성 & /scan 발행	✅
 2	토픽 수신 & 주행 판단	✅
 3	turtlesim 제어	✅
 4	MySQL 데이터 저장	✅
 5	데이터 파싱 & CSV 생성	✅
+
+---
 ⚠️ 한계
 turtlesim 경계 감지 없음
 LiDAR 데이터가 실제 위치와 무관한 랜덤 패턴
 실제 장애물 회피 성능 없음
 
-👉 본 프로젝트 목적:
-센서 → ROS → 제어 → DB → 분석까지 전체 파이프라인 구축
+👉 프로젝트 목적:
+센서 → ROS → 제어 → DB → 분석까지 전체 흐름 구현
 
 👨‍💻 개발자
 
