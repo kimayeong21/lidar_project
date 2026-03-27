@@ -83,11 +83,11 @@ python turtle_driver.py
 
 📊 진행 현황
 단계	     내용	                상태
-1	LiDAR 데이터 생성 & /scan 발행	✅/n
-2	토픽 수신 & 주행 판단	✅/n
-3	turtlesim 제어	✅/n
-4	MySQL 데이터 저장	✅/n
-5	데이터 파싱 & CSV 생성	✅/n
+1	LiDAR 데이터 생성 & /scan 발행	✅
+2	토픽 수신 & 주행 판단	✅
+3	turtlesim 제어	✅
+4	MySQL 데이터 저장	✅
+5	데이터 파싱 & CSV 생성	✅
 
 ---
 ⚠️ 한계
