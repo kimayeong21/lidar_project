@@ -1,2 +1,0 @@
-[console_scripts]
-lidar_publisher = lidar_mock.lidar_publisher:main
