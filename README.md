@@ -24,9 +24,7 @@ turtlesim 이동 (/cmd_vel)
 ↓
 MySQL 저장 → DataFrame/NumPy 변환
 
-
 ---
-
 ## 🚀 주요 기능
 
 - 360도 LiDAR 데이터 생성 (랜덤 패턴)
@@ -36,12 +34,11 @@ MySQL 저장 → DataFrame/NumPy 변환
 - turtlesim 실시간 제어
 - MySQL 데이터 저장
 - JSON → 360개 컬럼 데이터셋 변환
-
 ---
 
 ## 🧠 주행 알고리즘
 
-```python
+    python
 if front_dist < safe_dist:
     action = "turn_left" if left_dist > right_dist else "turn_right"
 else:
