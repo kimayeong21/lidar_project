@@ -69,4 +69,44 @@ else:
 
 
 ---
+### 4️⃣ 거북이 제어
+- geometry_msgs/Twist 메시지 사용
+- 직진 / 좌회전 / 우회전 구현
 
+### 5️⃣ 데이터 저장
+- MySQL 데이터베이스 활용
+- LiDAR 데이터(JSON) + 행동(action) 저장
+
+###🗄️ 데이터 구조
+- 컬럼명	설명
+- id 고유 ID
+- ranges	360도 거리 데이터 (JSON)
+- action	주행 행동
+- created_at	저장 시간
+
+###📊 데이터셋 변환
+- JSON 데이터를 360개 컬럼으로 변환
+- 머신러닝 학습 가능한 형태로 구성 (데이터 수, 361 컬럼) → 360개 거리값 + 1개 action
+
+### ▶️ 실행 방법
+- 1.LiDAR 데이터 생성
+    - ros2 run lidar_mock lidar_publisher
+- 2. rosbridge 실행
+    - ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+- 3. turtlesim 실행
+    - ros2 run turtlesim turtlesim_node
+- 4. Python 실행
+    - python subscriber.py
+
+###🎥 실행 결과
+- LiDAR 데이터를 기반으로 거북이가 자율적으로 이동
+- 장애물 회피 동작 수행
+- 실시간 데이터 저장
+
+###💡 기대 효과
+- 자율주행 시스템의 기본 구조 이해
+- ROS 기반 센서 처리 경험
+- 데이터 기반 확장 가능 (AI 적용 가능)
+
+###👨‍💻 개발자
+- 김아영 (Computer Science)
